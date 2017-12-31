@@ -6,6 +6,6 @@ public class NYPeppperoniPizza extends Pizza {
 		name = "New York Style Pepperoni Pizza";
 		dough = "Thick crust";
 		sauce = "Red pepper sauce";
-		toppings.add("Mozzarella cheese");
+		toppings.add("Mozarella cheese");
 	}
 }

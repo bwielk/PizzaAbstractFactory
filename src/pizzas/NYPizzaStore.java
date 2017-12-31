@@ -2,7 +2,6 @@ package pizzas;
 
 public class NYPizzaStore extends PizzaStore {
 
-	@Override
 	Pizza createPizza(String name) {
 		Pizza pizza = null;
 		switch (name){

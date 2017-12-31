@@ -7,7 +7,14 @@ public abstract class Pizza {
 	String name;
 	String dough;
 	String sauce;
-	ArrayList<String> toppings;
+	ArrayList<String> toppings = new ArrayList<String>();
+	
+	public String getDough() {
+		return dough;
+	}
+	public String getSauce() {
+		return sauce;
+	}
 	
 	public String getName() {
 		return name;

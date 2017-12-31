@@ -1,16 +1,12 @@
 package pizzas;
 
-public class PizzaStore {
-	
-	PizzaFactory pizzaFactory;
-	
-	public PizzaStore(PizzaFactory factory){
-		this.pizzaFactory = factory;
-	}
+public abstract class PizzaStore {
 	
 	public Pizza orderPizza(String name){
 		Pizza pizza;
-		pizza = pizzaFactory.createPizza(name);
+		pizza = createPizza(name);
 		return pizza;
 	}
+	
+	abstract Pizza createPizza(String name); //the factory method
 }

@@ -1,5 +1,5 @@
 package pizzas;
 
-public class PlumTomatoSaucce extends Sauce {
+public class PlumTomatoSaucce implements Sauce {
 
 }

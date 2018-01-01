@@ -13,6 +13,7 @@ public class PepperoniPizza extends Pizza {
 		sauce = ingredientFactory.createSauce();
 		pepperoni = ingredientFactory.createPepperoni();
 		cheese = ingredientFactory.createCheese();
+		vegetables = ingredientFactory.createVegetables();
 	}
 	
 	

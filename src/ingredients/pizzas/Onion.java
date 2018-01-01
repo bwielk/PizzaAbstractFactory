@@ -1,5 +1,5 @@
 package pizzas;
 
-public class Onion extends Vegetable{
+public class Onion implements Vegetable{
 
 }

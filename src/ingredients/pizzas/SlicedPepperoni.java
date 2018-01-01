@@ -1,5 +1,5 @@
 package pizzas;
 
-public class SlicedPepperoni extends Pepperoni {
+public class SlicedPepperoni implements Pepperoni {
 
 }

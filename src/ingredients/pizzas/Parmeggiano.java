@@ -1,5 +1,5 @@
 package pizzas;
 
-public class Parmeggiano extends Cheese {
+public class Parmeggiano implements Cheese {
 
 }

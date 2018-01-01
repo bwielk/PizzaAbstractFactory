@@ -1,5 +1,5 @@
 package pizzas;
 
-public class MarinaraSauce extends Sauce {
+public class MarinaraSauce implements Sauce {
 
 }

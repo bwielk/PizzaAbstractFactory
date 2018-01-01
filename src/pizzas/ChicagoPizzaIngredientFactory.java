@@ -1,26 +1,26 @@
 package pizzas;
 
+public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
 
-public class NYPizzaIngridientFactory implements PizzaIngridientFactory {
-	
 	public Dough createDough() {
-		return new ThinCrustDough();
+		return new ThickCrustDough();
 	}
 
 	public Sauce createSauce() {
-		return new MarinaraSauce();
+		return new PlumTomatoSaucce();
 	}
 
 	public Cheese createCheese() {
-		return new Mozarella();
+		return new Parmeggiano();
 	}
 
 	public Vegetable[] createVegetables() {
-		Vegetable vegetables[] = {new Garlic(), new Onion(), new Mushroom(), new RedPepper()};
+		Vegetable vegetables[] = {new Aubergine(), new Spinach(), new BlackOlives()};
 		return vegetables;
 	}
 
 	public Pepperoni createPepperoni() {
 		return new SlicedPepperoni();
 	}
+
 }

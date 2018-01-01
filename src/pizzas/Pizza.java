@@ -31,5 +31,10 @@ public abstract class Pizza {
 		return cheese;
 	}
 	
+	public void setName(String newName) {
+		name = newName;
+	}
+	
 	abstract void prepare();
+	
 }

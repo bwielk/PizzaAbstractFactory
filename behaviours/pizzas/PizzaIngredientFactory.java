@@ -1,6 +1,6 @@
 package pizzas;
 
-public interface PizzaIngridientFactory {
+public interface PizzaIngredientFactory {
 	
 	public Dough createDough();
 	public Sauce createSauce();

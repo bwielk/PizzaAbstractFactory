@@ -2,14 +2,17 @@ package pizzas;
 
 public class NYPizzaStore extends PizzaStore {
 
-	Pizza createPizza(String name) {
+	protected Pizza createPizza(String name) {
+		PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
 		Pizza pizza = null;
 		switch (name){
 		case "cheese":
-			pizza = new NYCheesePizza();
+			pizza = new CheesePizza(ingredientFactory);
+			pizza.setName("New York Style Cheese Pizza");
 			break;
 		case "pepperoni":
-			pizza = new NYPeppperoniPizza();
+			pizza = new PepperoniPizza(ingredientFactory);
+			pizza.setName("New York Style Pepperoni Pizza");
 			break;
 		}
 		return pizza;

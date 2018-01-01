@@ -1,7 +1,5 @@
 package pizzas;
 
-import java.util.ArrayList;
-
 public abstract class Pizza {
 	
 	String name;
@@ -14,6 +12,7 @@ public abstract class Pizza {
 	public Dough getDough() {
 		return dough;
 	}
+	
 	public Sauce getSauce() {
 		return sauce;
 	}
@@ -21,12 +20,15 @@ public abstract class Pizza {
 	public String getName() {
 		return name;
 	}
+	
 	public Vegetable[] getVegetables(){
 		return vegetables;
 	}
+	
 	public Pepperoni getPepperoni() {
 		return pepperoni;
 	}
+	
 	public Cheese getCheese() {
 		return cheese;
 	}
@@ -36,5 +38,4 @@ public abstract class Pizza {
 	}
 	
 	abstract void prepare();
-	
 }

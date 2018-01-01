@@ -3,8 +3,8 @@ package pizzas;
 public class NYPizzaStore extends PizzaStore {
 
 	protected Pizza createPizza(String name) {
-		PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
 		Pizza pizza = null;
+		PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
 		switch (name){
 		case "cheese":
 			pizza = new CheesePizza(ingredientFactory);

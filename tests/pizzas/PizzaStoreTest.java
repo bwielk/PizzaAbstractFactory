@@ -20,35 +20,37 @@ public class PizzaStoreTest{
 	public void NYPizzaStoreCanCreateNYCheesePizza(){
 		Pizza pizza = nyStore.orderPizza("cheese");
 		assertEquals("New York Style Cheese Pizza", pizza.getName());
-		assertEquals("Thin crust", pizza.getDough());
-		assertEquals("Marinara", pizza.getSauce());		
-		assertEquals("Parmeggiano cheese", pizza.getToppings().get(0));
+		assertEquals("Thin Crust Dough", pizza.getDough().getDoughName());
+		assertEquals("Marinara Sauce", pizza.getSauce().getSauceName());		
+		assertEquals("Mozzarella", pizza.getCheese().getCheeseName());
 	}
 
 	@Test
 	public void NYPizzaStoreCanCreateNYPepperoniPizza(){
 		Pizza pizza = nyStore.orderPizza("pepperoni");
 		assertEquals("New York Style Pepperoni Pizza", pizza.getName());
-		assertEquals("Thick crust", pizza.getDough());
-		assertEquals("Red pepper sauce", pizza.getSauce());		
-		assertEquals("Mozarella cheese", pizza.getToppings().get(0));
+		assertEquals("Thin Crust Dough", pizza.getDough().getDoughName());
+		assertEquals("Marinara Sauce", pizza.getSauce().getSauceName());		
+		assertEquals("Mozzarella", pizza.getCheese().getCheeseName());
+		assertEquals("Sliced Pepperoni", pizza.getPepperoni().getPepperoniName());
 	}
 	
 	@Test
 	public void ChicagoPizzaStoreCanCreateChicagoCheesePizza(){
 		Pizza pizza = chicagoStore.orderPizza("cheese");
 		assertEquals("Chicago Style Cheese Pizza", pizza.getName());
-		assertEquals("Thick crust", pizza.getDough());
-		assertEquals("Tomato sauce", pizza.getSauce());		
-		assertEquals("Mozarella cheese", pizza.getToppings().get(0));
+		assertEquals("Thick Crust Dough", pizza.getDough().getDoughName());
+		assertEquals("Plum Tomato Sauce", pizza.getSauce().getSauceName());		
+		assertEquals("Parmeggiano", pizza.getCheese().getCheeseName());
 	}
 
 	@Test
 	public void ChicagoPizzaStoreCanCreateChicagoPepperoniPizza(){
 		Pizza pizza = chicagoStore.orderPizza("pepperoni");
 		assertEquals("Chicago Style Pepperoni Pizza", pizza.getName());
-		assertEquals("Thick crust", pizza.getDough());
-		assertEquals("Tomato and basil sauce", pizza.getSauce());		
-		assertEquals("Parmeggiano cheese", pizza.getToppings().get(0));
+		assertEquals("Thick Crust Dough", pizza.getDough().getDoughName());
+		assertEquals("Plum Tomato Sauce", pizza.getSauce().getSauceName());		
+		assertEquals("Parmeggiano", pizza.getCheese().getCheeseName());
+		assertEquals("Sliced Pepperoni", pizza.getPepperoni().getPepperoniName());
 	}
 }
